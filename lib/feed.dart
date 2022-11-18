@@ -2,9 +2,18 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class Feed extends StatefulWidget {
-  const Feed({
-    Key? key,
-  }) : super(key: key);
+  const Feed(
+      {Key? key,
+      required this.feedImage,
+      required this.feedContent,
+      required this.feedFavorite,
+      required this.feedComment})
+      : super(key: key);
+
+  final String feedImage;
+  final String feedContent;
+  final int feedFavorite;
+  final int feedComment;
 
   @override
   State<Feed> createState() => _FeedState();
@@ -47,7 +56,7 @@ class _FeedState extends State<Feed> {
             ],
           ),
           Image.asset(
-            "assets/minyeo.jpg",
+            widget.feedImage,
             height: 400,
             width: double.infinity,
             fit: BoxFit.cover,
@@ -93,7 +102,7 @@ class _FeedState extends State<Feed> {
           Padding(
             padding: const EdgeInsets.only(left: 14.0),
             child: Text(
-              "좋아요 ${favorite + 921}개",
+              "좋아요 ${widget.feedFavorite + favorite}개",
               style: TextStyle(
                 fontWeight: FontWeight.bold,
               ),
@@ -115,7 +124,7 @@ class _FeedState extends State<Feed> {
                 Padding(
                   padding: const EdgeInsets.only(left: 8.0),
                   child: Text(
-                    "승현아 사랑해♥",
+                    widget.feedContent,
                   ),
                 ),
               ],
@@ -124,7 +133,7 @@ class _FeedState extends State<Feed> {
           Padding(
             padding: const EdgeInsets.only(left: 14.0),
             child: Text(
-              "댓글 581개 모두 보기",
+              "댓글 ${widget.feedComment}개 모두 보기",
               style: TextStyle(
                 color: Colors.grey,
               ),
