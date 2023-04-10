@@ -1,16 +1,16 @@
-# instagram
+# "인스타그램" 클론 코딩
 
-A new Flutter project.
+### 사용 언어
+Dart
 
-## Getting Started
+### 사용 프레임워크
+Flutter
 
-This project is a starting point for a Flutter application.
+### 작성 시기
+2022년 하반기
 
-A few resources to get you started if this is your first Flutter project:
+### 기능
+인스타그램 피드 확인
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 스크린샷
+![sc](https://user-images.githubusercontent.com/70440577/230866965-c1d323f8-f10b-4faa-a7b3-8fa90fb79c19.PNG)
